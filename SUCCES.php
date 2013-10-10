@@ -7,7 +7,6 @@
 <hr />
 <marquee><strong>Selamat Datang di Siakad Universitas Negeri Malang</strong></marquee>
 <hr />
-<p> Anda Login Sebagai : Admin </p>
 <br />
 <br />
 <br />
@@ -32,9 +31,14 @@
 <br />
 <br />
 <hr />
+
+<body bgcolor="#00FFFF">
+ <?PHP
+$username=$_POST['username'];
+echo 'Anda Login Sebagai : ' . $username;
+?>
 <p align="center">
 <a href="LOGIN_DEMO.php"><input name="LOGOUT" type="submit" value="LOGOUT"/></a>	
 </p>
-<body bgcolor="#00FFFF">
 </body>
 </html>
