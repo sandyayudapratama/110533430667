@@ -6,13 +6,13 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 <title>Kalkulator</title> 
 <script>
 function cek(a) {
-al = /^[1-9]{1,}$/; //Cek validitas harus huruf
+al = /^[0-9]{1,}$/; //Cek validitas harus angka
 return al.test(a);
 }
 function val(){
 var x=document.forms["formku"]["input1"].value;
 var y=document.forms["formku"]["input2"].value;
-if (x==null || x=="" && y==null || y=="") //cek tidak boleh kosong
+if (x==null || x=="" && y==null || y=="") //cek nilai tidak boleh kosong
   {
   alert("Inputan Kosong");
   formku.input1.focus();
